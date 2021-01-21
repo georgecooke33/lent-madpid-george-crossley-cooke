@@ -122,3 +122,41 @@ scene.setBackgroundImage(img`
     ..ddd.dd..ddddddd.ddddbbdbbbbffffbbfffffffbbf4444114444ffff777777777777777ffbbffff777777777777777777fffffdffddddddddffff.bfffffffffbbb77777777777777777777777777
     ...dd.dd..d.ddddd..ddddbddbbbbbbbffffffffbbf.44444444fffff777777777777777777fbbffff77777777777777777ffffffdddddddddff....fffffffffffbb77777777777777777777777777
     `)
+music.playMelody("C5 A C G E G B C ", 500)
+let mySprite2 = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e e . . . . . . . 
+    . . . . . . f d f . . . . . . . 
+    . . . . . . f d f . . . . . . . 
+    . . . . . . d d d . . . . . . . 
+    . . . . . . e f e . . . . . . . 
+    . . . . f f 1 1 1 f f . . . . . 
+    . . . f f f f f f f f . . . . . 
+    . . . f f f f f f f f f . . . . 
+    . . f f f f f f f f f f f . . . 
+    . . f f f f f f f f f f f . . . 
+    . . . f f f f f f f f f . . . . 
+    . . . f f f f f f f f . . . . . 
+    . . . . . . f . f . . . d d . . 
+    . . . . . . f . f . . . . . . . 
+    . . . . f f f . f f f . . . . . 
+    `, SpriteKind.Enemy)
+let mySprite = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . 5 5 5 5 . . . . . . . 
+    . . . . . f d d f . . . . . . . 
+    . . . . . f d d f . . . . . . . 
+    . . . . . d d d d . . . . . . . 
+    . . . . . f f f f . . . . . . . 
+    . . . . . 1 1 1 1 . . . . . . . 
+    . . . f f f 1 1 f f f . . . . . 
+    . . . f f f 1 1 f f f . . . . . 
+    . . . f f f 1 1 f f f . . . . . 
+    . . . f f f 1 1 f f f . . . . d 
+    . . . f f f 1 1 f f f . . . . . 
+    . . . . . f f f f . . . . . . . 
+    . . . . . f f f f . . . . . . . 
+    . . . . . f f f f . . . . . . . 
+    . . . f f f f f f f f . . . . . 
+    `, SpriteKind.Player)
+controller.moveSprite(mySprite)

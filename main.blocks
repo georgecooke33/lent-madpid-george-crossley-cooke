@@ -1,4 +1,4 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="Y7,/Dx#}xe.M]a=%l6|h" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id=",=ydrKG*$RXj@jU!%YD."><value name="color"><shadow type="colorindexpicker" id="1fT9/IamIwgZ(!sTFvur"><field name="index">1</field></shadow></value><next><block type="particlesStartScreenAnimation" id="z{756uzm@jz~mQ#Mtam%"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.blizzard</field><next><block type="gamesetbackgroundimage" id="(z)(v(yi}wEu0xK0d.K,"><value name="img"><shadow type="background_image_picker" id="bJywbt^%NhA^xZ?~)KzJ"><field name="img">img`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="7RMd2FZ5eGtK-,e@s/Zg">Player</variable><variable type="KIND_SpriteKind" id=".eVCySF?MN@,Mj|MrA}A">Projectile</variable><variable type="KIND_SpriteKind" id="x3rG:T7%C-S3b/#Ty5;S">Food</variable><variable type="KIND_SpriteKind" id="g-%nC.WCmTAJu9Weo32Q">Enemy</variable><variable id="]A1!um!;(QRBeUk#le4;">mySprite</variable><variable id="[BO9{,@WP6+sui}9o^%#">mySprite2</variable></variables><block type="pxt-on-start" id="Y7,/Dx#}xe.M]a=%l6|h" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id=",=ydrKG*$RXj@jU!%YD."><value name="color"><shadow type="colorindexpicker" id="1fT9/IamIwgZ(!sTFvur"><field name="index">1</field></shadow></value><next><block type="particlesStartScreenAnimation" id="z{756uzm@jz~mQ#Mtam%"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.blizzard</field><next><block type="gamesetbackgroundimage" id="(z)(v(yi}wEu0xK0d.K,"><value name="img"><shadow type="background_image_picker" id="bJywbt^%NhA^xZ?~)KzJ"><field name="img">img`
 ..........................f...........ff....................................................................................................ff..................
 ..........................ff...........ff..................................................................................................f....................
 ...........................f............fffff............................................................................................ff.....................
@@ -240,4 +240,38 @@ b.dd.dddd.bddddddbbebbbbfeeee777777777bbfffffffffffbbbfee111ff777777fffbbfff777b
 ..dddddd..d.ddddddddbbbbbbbbdeeffffffffffffbb44ee11eee441fff7777777777777ffbbffff77777777777777777777ffddddffdddddddddfdfbffff11ffbb7777777777777777777777777777
 ..ddd.dd..ddddddd.ddddbbdbbbbffffbbfffffffbbf4444114444ffff777777777777777ffbbffff777777777777777777fffffdffddddddddffff.bfffffffffbbb77777777777777777777777777
 ...dd.dd..d.ddddd..ddddbddbbbbbbbffffffffbbf.44444444fffff777777777777777777fbbffff77777777777777777ffffffdddddddddff....fffffffffffbb77777777777777777777777777
-`</field></block></value></block></next></block></next></block></statement></block></xml>
+`</field></block></value><next><block type="playMelody" id="XtaetcRV6,(HcQP6XU$F"><value name="melody"><shadow type="melody_editor" id="Bred/CA95}Q,U+VHqgDN"><field name="melody">"C5 A C G E G B C "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="]UP=Xe44pKBIs/yrp!V?"><mutation min="40" max="500" label="Tempo" precision="0"/><field name="SLIDER">500</field></shadow></value><next><block type="variables_set" id="J1h}+1FC[Q;oulUq=89T"><field name="VAR" id="[BO9{,@WP6+sui}9o^%#">mySprite2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Gp`9s7%+6+/W0Vug_~Qc"><value name="img"><shadow type="screen_image_picker" id="k,F.9w8,h^W[8ZCG3`L{"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . e e e . . . . . . . 
+. . . . . . f d f . . . . . . . 
+. . . . . . f d f . . . . . . . 
+. . . . . . d d d . . . . . . . 
+. . . . . . e f e . . . . . . . 
+. . . . f f 1 1 1 f f . . . . . 
+. . . f f f f f f f f . . . . . 
+. . . f f f f f f f f f . . . . 
+. . f f f f f f f f f f f . . . 
+. . f f f f f f f f f f f . . . 
+. . . f f f f f f f f f . . . . 
+. . . f f f f f f f f . . . . . 
+. . . . . . f . f . . . d d . . 
+. . . . . . f . f . . . . . . . 
+. . . . f f f . f f f . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="C3]d:bqEp%rD10J#dOxd"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="variables_set" id="k$(-RpsK5taFgj,Wz{Xe"><field name="VAR" id="]A1!um!;(QRBeUk#le4;">mySprite</field><value name="VALUE"><shadow type="math_number" id="}R:r;DveH|@]jZqiedk|"><field name="NUM">0</field></shadow><block type="spritescreate" id="QmzOwnpRuh~%y%TEagqf"><value name="img"><shadow type="screen_image_picker" id=")RthYq_-3VUZI_fPHx|f"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . 5 5 5 5 . . . . . . . 
+. . . . . f d d f . . . . . . . 
+. . . . . f d d f . . . . . . . 
+. . . . . d d d d . . . . . . . 
+. . . . . f f f f . . . . . . . 
+. . . . . 1 1 1 1 . . . . . . . 
+. . . f f f 1 1 f f f . . . . . 
+. . . f f f 1 1 f f f . . . . . 
+. . . f f f 1 1 f f f . . . . . 
+. . . f f f 1 1 f f f . . . . d 
+. . . f f f 1 1 f f f . . . . . 
+. . . . . f f f f . . . . . . . 
+. . . . . f f f f . . . . . . . 
+. . . . . f f f f . . . . . . . 
+. . . f f f f f f f f . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="eI6{tP.ZRx23W:C3R?*T"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="Hj~H[y]Vr,HLQUgnV|dQ"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="40iEAldD}dg8~!,~vk_O"><field name="VAR" id="]A1!um!;(QRBeUk#le4;">mySprite</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="mapgettilestype" id=",8xCK4=sFduv-aP?ulNt" disabled="true" x="510" y="490"><value name="tile"><shadow type="tileset_tile_picker" id="See?rrTID]!8WrkoX^C]" disabled="true"><field name="tile">myTiles.transparency16</field></shadow></value></block></xml>
